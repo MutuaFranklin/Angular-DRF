@@ -1,0 +1,33 @@
+<div class="container-fluid main">
+
+</div>
+<div class="container ">
+  <h4 class="mt-4">Services</h4>
+
+  <form class='form-inline m-5'>
+    <div class="input-group">
+      <input type='text' id='search' name="search" #search (keyup.enter)="searchService(search.value)"  class="form-control search-form" placeholder="Search">
+      <span class="input-group-btn" style="width:39px">
+        <button id="search-this" (click)="searchService(search.value)" type="button" class="pull-right btn btn-default search-btn">
+            <i class="fa fa-search"></i>
+        </button>
+      </span>
+    </div>
+  </form>
+    <div class="d-flex" *ngFor="let service of services">
+      <div class="card m-3" style="width: 18rem;">
+        <img src="{{service.service_image}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{service.service_title}}</h5>
+          <p class="card-text">{{service.description}}</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+</div>

@@ -1,0 +1,19 @@
+<div class="container">
+  <h4>Services</h4>
+    <div class="d-flex" *ngFor="let service of services">
+      <div class="card m-3" style="width: 18rem;">
+        <img src="{{service.service_image}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{service.service_title}}</h5>
+          <p class="card-text">{{service.description}}</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+</div>
